@@ -1,6 +1,6 @@
 # 鼠E疫苗_StolenMeat
 
-Targets local Probably Stolen 0.46D (Steam build 26337366). Build with `dotnet build StolenMeat.csproj -c Release`. The output DLL is `StolenMeat.dll`. The 0.2.2 package is in `D:\ModForStolen\release0.2.2\StolenMeat`; its manifest and DLL are installed in the game's `Mods\StolenMeat` directory.
+Targets local Probably Stolen 0.46D (Steam build 26337366). 
 
 ## Product path
 
@@ -22,7 +22,7 @@ The mod split dialog calls native `GameItem.GetSplitItem` on an isolated empty s
 
 ## Source-only animal stack extension
 
-Terminology: one rat pile (`鼠堆` or `一堆`) contains rats with the same recorded parents and current age in whole native days, including deferred days. One visible inventory cell (`一格`) may contain several such piles. Unless `一格` is stated explicitly, `鼠堆` refers to one parent-and-age group, even when several groups share a cell.
+Terminology: one rat pile contains rats with the same recorded parents and current age in whole native days, including deferred days. One visible inventory cell may contain several such piles. Unless `cell` is stated explicitly, `rat pile` refers to one parent-and-age group, even when several groups share a cell.
 
 The current source also stacks native `rat` objects, separating live rats and corpses. The versioned item tag stores individual real panels and counted virtual records. Drag merging, the native split path, and the `拆分` menu preserve saved attributes; taking one rat settles or samples its age, hunger and weight. The displayed group tooltip uses quantity-weighted average or expected values and the native lower-right quantity badge. A corpse butcher operation consumes one corpse; a death event separates corpses from a live group. The overcrowding calculation counts actual units inside stacks. `ItemStackPolicy.AllAnimalsEnabled` is the default-off switch for future husbandry species.
 
