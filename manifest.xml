@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <ID>stolen_meat</ID>
+  <Name>鼠E疫苗_StolenMeat</Name>
+  <Author>StolenMeat</Author>
+  <ModVersion>0.2.2</ModVersion>
+  <Description>屠宰产物优先堆叠；肉类通过原生右键菜单拆分，原容器放不下时使用临时窗口。</Description>
+  <GameVersions>
+    <Version>0.46D</Version>
+  </GameVersions>
+  <Prerequisites />
+  <Assemblies>
+    <Assembly>StolenMeat.dll</Assembly>
+  </Assemblies>
+  <Capabilities />
+</Manifest>
